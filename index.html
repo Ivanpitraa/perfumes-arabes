@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfumes Árabes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fffaf0;
+      color: #222;
+    }
+    header {
+      background-color: #3e2f25;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      background-color: #d6c3b3;
+    }
+    nav a {
+      text-decoration: none;
+      color: #3e2f25;
+      font-weight: 600;
+    }
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1611078489935-8ecae0cdb8b3');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    }
+    section {
+      padding: 2rem;
+    }
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .producto {
+      background-color: #f3eee7;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .producto:hover {
+      transform: translateY(-5px);
+    }
+    .producto img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .producto .info {
+      padding: 1rem;
+    }
+    .producto .info h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+    .producto .info p {
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+    }
+    .producto .info span {
+      font-weight: bold;
+      color: #3e2f25;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #3e2f25;
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Esencia Árabe</h1>
+    <p>Perfumes auténticos y decants de lujo</p>
+  </header>
+
+  <nav>
+    <a href="#novedades">Novedades</a>
+    <a href="#decants">Decants</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <div class="hero">
+    Vive la elegancia del perfume árabe
+  </div>
+
+  <section id="novedades">
+    <h2>Novedades</h2>
+    <div class="productos">
+      <div class="producto">
+        <img src="https://images.unsplash.com/photo-1600185366004-c74e6c3d2c5b" alt="Perfume Oud Royal">
+        <div class="info">
+          <h3>Oud Royal</h3>
+          <p>Una mezcla rica y seductora de oud e incienso oriental.</p>
+          <span>$120</span>
+        </div>
+      </div>
+      <div class="producto">
+        <img src="https://images.unsplash.com/photo-1611068122300-fbbf2a0b8cb0" alt="Amber Luxe">
+        <div class="info">
+          <h3>Amber Luxe</h3>
+          <p>Ámbar dorado con toques de vainilla y almizcle blanco.</p>
+          <span>$95</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="decants">
+    <h2>Decants Seleccionados</h2>
+    <div class="productos">
+      <div class="producto">
+        <img src="https://images.unsplash.com/photo-1611068349287-d7b2f1d728a4" alt="Decant Oud Musk">
+        <div class="info">
+          <h3>Decant Oud Musk (5ml)</h3>
+          <p>Ideal para probar antes de comprar el frasco completo.</p>
+          <span>$15</span>
+        </div>
+      </div>
+      <div class="producto">
+        <img src="https://images.unsplash.com/photo-1611080626915-bfeb5976f445" alt="Decant Rose Dunes">
+        <div class="info">
+          <h3>Decant Rose Dunes (5ml)</h3>
+          <p>Una rosa oriental envolvente y sofisticada.</p>
+          <span>$18</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Tienes dudas o quieres hacer un pedido personalizado? Escríbenos a <strong>contacto@esenciaarabe.com</strong></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Esencia Árabe. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
